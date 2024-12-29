@@ -1,0 +1,13 @@
+[package]
+name = "lab3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.9.0"
+lazy_static = "1.5.0"
+rand = "0.8.5"
+regex = "1.11.1"
+serde = { version = "1.0", features = ["derive"] }
+warp = "0.3.7"
+serde_json = "1.0"
