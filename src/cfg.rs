@@ -1034,7 +1034,7 @@ pub async fn get_words(_num: String) -> HttpResponse {
     // Генерация слов и проверка их принадлежности языку
     let results: Vec<WordCheckResult> = (0..num)
         .filter_map(|_| {
-            let word = cfg.some_word(None,None,None,None,30,0., 0.5); 
+            let word = cfg.some_word(None,None,None,None,20,0.3, 0.01); 
             let in_language = cyk (&cfg,&word);
             Some(WordCheckResult {
                 word : word.iter()
